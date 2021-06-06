@@ -12,7 +12,8 @@ class SomeClass(metaclass=Singleton):
     pass
 
 
-s1 = SomeClass()
-s2 = SomeClass()
+if __name__ == '__main__':
+    s1 = SomeClass()
+    s2 = SomeClass()
 
-print(s1 is s2)  # True
+    print(s1 is s2)  # True
