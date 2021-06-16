@@ -25,7 +25,7 @@ def client_code(people: list):
 russian = Russian()
 ukrainian = Ukrainian()
 
-#  Идея тут в том, что у наших классов нет метода spek, но нам очень хочется его. Поэтому мы создали такой вот
+#  Идея тут в том, что у наших классов нет метода speak, но нам очень хочется его. Поэтому мы создали такой вот
 #  класс Adapter, что принимает наш объект и словарь методов что мы хотим добавить в него
 people = [Adapter(russian, speak=russian.speak_russian), Adapter(ukrainian, speak=ukrainian.speak_ukrainian)]
 
